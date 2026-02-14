@@ -1,0 +1,42 @@
+Info: Total warnings: 0, errors: 5.
+Info: Processing symbol 'D2:Diode_SMD:D_MiniMELF'.
+Info: Processing symbol 'D3:Diode_SMD:D_MiniMELF'.
+Info: Processing symbol 'D4:Diode_SMD:D_MiniMELF'.
+Info: Processing symbol 'D5:Diode_SMD:D_MiniMELF'.
+Info: Processing symbol 'J1:Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV'.
+Info: Processing symbol 'J2:'.
+Info: Processing symbol 'R1:Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder'.
+Info: Processing symbol 'R2:'.
+Info: Processing symbol 'U1:Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm'.
+Info: Processing symbol 'D1:Diode_SMD:D_MiniMELF'.
+Info: Processing symbol 'U2:Package_QFP:LQFP-100_14x14mm_P0.5mm'.
+Info: Processing symbol 'U3:Package_TO_SOT_SMD:SOT-23-5'.
+Info: Processing symbol 'U4:Package_LGA:Bosch_LGA-16_4.5x3mm_P0.5mm_LayoutBorder7x1y_ClockwisePinNumbering'.
+Info: Processing symbol 'U9:Package_TO_SOT_SMD:SOT-23-5'.
+Info: Processing symbol 'U8:Package_TO_SOT_SMD:SOT-23-5'.
+Info: Processing symbol 'U7:SY8205FCC:VREG_SY8205FCC'.
+Info: Processing symbol 'U6:BMM350:BGA9C40P3X3_128X128X50'.
+Info: Processing symbol 'U5:BMP581:BMP581'.
+Add R1 (footprint 'Resistor_SMD:R_01005_0402Metric_Pad0.57x0.30mm_HandSolder').
+Add J1 (footprint 'Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV').
+Add U2 (footprint 'Package_QFP:LQFP-100_14x14mm_P0.5mm').
+Add U3 (footprint 'Package_TO_SOT_SMD:SOT-23-5').
+Add U4 (footprint 'Package_LGA:Bosch_LGA-16_4.5x3mm_P0.5mm_LayoutBorder7x1y_ClockwisePinNumbering').
+Add D5 (footprint 'Diode_SMD:D_MiniMELF').
+Add D4 (footprint 'Diode_SMD:D_MiniMELF').
+Add D3 (footprint 'Diode_SMD:D_MiniMELF').
+Add D2 (footprint 'Diode_SMD:D_MiniMELF').
+Add U8 (footprint 'Package_TO_SOT_SMD:SOT-23-5').
+Add D1 (footprint 'Diode_SMD:D_MiniMELF').
+Add U9 (footprint 'Package_TO_SOT_SMD:SOT-23-5').
+
+
+Add U1 (footprint 'Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm').
+Error: Cannot add J2 (no footprint assigned).
+Error: Cannot add R2 (no footprint assigned).
+Error: Cannot add U5 (footprint 'BMP581:BMP581' not found).
+Error: Cannot add U6 (footprint 'BMM350:BGA9C40P3X3_128X128X50' not found).
+Error: Cannot add U7 (footprint 'SY8205FCC:VREG_SY8205FCC' not found).
+
+
+Info: Total warnings: 0, errors: 5.

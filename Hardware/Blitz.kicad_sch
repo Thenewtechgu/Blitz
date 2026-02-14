@@ -1,0 +1,228 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e8b263af-d576-40b7-a774-1c6d96794e54")
+	(paper "A4")
+	(title_block
+		(title "Blitz")
+		(date "2026-02-12")
+	)
+	(lib_symbols)
+	(sheet
+		(at 102.87 107.95)
+		(size 99.06 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "15fd4c35-84c4-4d4c-9c2f-0c9be770baef")
+		(property "Sheetname" "Sensors"
+			(at 102.87 107.2384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensors.kicad_sch"
+			(at 102.87 164.4146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 95.25)
+		(size 80.01 67.31)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1cc96743-78fe-4fb8-9377-b8cf3db2d524")
+		(property "Sheetname" "Telemetry"
+			(at 203.2 94.5384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Telemetry.kicad_sch"
+			(at 203.2 163.1446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 86.36 36.83)
+		(size 97.79 63.5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4d38cde4-2da4-46a2-a85b-36f05d9f6710")
+		(property "Sheetname" "MPU"
+			(at 86.36 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MPU.kicad_sch"
+			(at 86.36 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 95.25 165.1)
+		(size 81.28 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6")
+		(property "Sheetname" "Power"
+			(at 95.25 164.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 95.25 196.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 12.7)
+		(size 81.28 69.85)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b3498ea0-4292-4915-ba0e-b978ac08d83f")
+		(property "Sheetname" "Navigation"
+			(at 203.2 11.9884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Navigation.kicad_sch"
+			(at 203.2 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
