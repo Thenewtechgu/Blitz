@@ -430,7 +430,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -633,6 +633,10 @@
     [
       "4d38cde4-2da4-46a2-a85b-36f05d9f6710",
       "MPU"
+    ],
+    [
+      "5ef537cb-0f63-4925-9030-5c1558b6d930",
+      "MPU-Bootloader"
     ]
   ],
   "text_variables": {}

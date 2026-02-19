@@ -136,6 +136,48 @@
 		)
 	)
 	(sheet
+		(at 42.545 121.285)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5ef537cb-0f63-4925-9030-5c1558b6d930")
+		(property "Sheetname" "MPU-Bootloader"
+			(at 42.545 120.5734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MPUBootloader.kicad_sch"
+			(at 42.545 125.6796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 95.25 165.1)
 		(size 81.28 30.48)
 		(exclude_from_sim no)
