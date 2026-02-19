@@ -1,2 +1,2 @@
 # Blitz
-Blitz is a STM32H723VGT6 based flight controller with dual Rp2350B for navigation and telemetry
+Blitz is a MIMXRT1062DVJ6B based flight controller with dual Rp2350B for navigation and telemetry
