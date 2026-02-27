@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Blitz")
+		(date "2026-02-19")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -773,7 +774,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AP2112K-3.3"
+		(symbol "Regulator_Linear:TLV75733PDRV"
 			(pin_names
 				(offset 0.254)
 			)
@@ -781,15 +782,14 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -5.08 5.715 0)
+				(at -3.81 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "AP2112K-3.3"
+			(property "Value" "TLV75733PDRV"
 				(at 0 5.715 0)
 				(effects
 					(font
@@ -798,17 +798,18 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
 				(at 0 8.255 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-				(at 0 2.54 0)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv757p.pdf"
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -816,7 +817,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+			(property "Description" "1A Low IQ Small Size Low Dropout Voltage Regulator, Fixed Output 3.3V, WSON6"
 				(at 0 0 0)
 				(effects
 					(font
@@ -825,7 +826,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
+			(property "ki_keywords" "LDO Regulator Fixed Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -834,7 +835,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23?5*"
+			(property "ki_fp_filters" "WSON*1EP*2x2mm*P0.65mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -843,7 +844,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AP2112K-3.3_0_1"
+			(symbol "TLV75733PDRV_0_1"
 				(rectangle
 					(start -5.08 4.445)
 					(end 5.08 -5.08)
@@ -856,18 +857,18 @@
 					)
 				)
 			)
-			(symbol "AP2112K-3.3_1_1"
+			(symbol "TLV75733PDRV_1_1"
 				(pin power_in line
 					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "VIN"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -885,7 +886,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -903,7 +904,26 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -922,7 +942,26 @@
 							)
 						)
 					)
-					(number "4"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -933,14 +972,14 @@
 				(pin power_out line
 					(at 7.62 2.54 180)
 					(length 2.54)
-					(name "VOUT"
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1905,6 +1944,18 @@
 		)
 	)
 	(junction
+		(at 116.84 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "333b66ae-6485-4e60-b000-2835da4c4880")
+	)
+	(junction
+		(at 124.46 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "47120269-202c-47e1-9157-731aac270017")
+	)
+	(junction
 		(at 73.66 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1929,16 +1980,22 @@
 		(uuid "be36490d-1982-4d65-bfc1-eceb0f0ecf70")
 	)
 	(junction
+		(at 124.46 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3e9ba06-a644-4763-b539-1184d05e3545")
+	)
+	(junction
+		(at 132.08 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb0a9a3c-d087-4f0b-aade-c643bf1fe121")
+	)
+	(junction
 		(at 80.01 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce524079-f713-41e0-b03d-3b522b714b3f")
-	)
-	(junction
-		(at 120.65 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d9b64769-d122-4819-b685-ff0167bc2bff")
 	)
 	(wire
 		(pts
@@ -1959,6 +2016,16 @@
 			(type default)
 		)
 		(uuid "0708a2d5-c0b9-4bf6-8073-ba85e912b679")
+	)
+	(wire
+		(pts
+			(xy 124.46 125.73) (xy 124.46 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1364ef0d-179b-4cb5-83c0-99f56f34d0f6")
 	)
 	(wire
 		(pts
@@ -2012,13 +2079,23 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 138.43) (xy 113.03 138.43)
+			(xy 124.46 133.35) (xy 124.46 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a720d49b-e1bf-4234-af9f-0ae28cadfecc")
+		(uuid "bcb2f206-e2ff-4f77-84fe-d5b16ffe5420")
+	)
+	(wire
+		(pts
+			(xy 116.84 125.73) (xy 116.84 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c165dc50-cc7d-49f3-a5e3-f261a2fc4d7d")
 	)
 	(wire
 		(pts
@@ -2032,13 +2109,13 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 138.43) (xy 113.03 130.81)
+			(xy 124.46 133.35) (xy 132.08 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e8e878d2-c11a-4d19-86c1-73d91087e0b1")
+		(uuid "e28c56ce-9a7b-4cc4-a662-65db2f4650cb")
 	)
 	(wire
 		(pts
@@ -2677,72 +2754,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 120.65 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41537b06-8731-41ac-a68a-703e440780ff")
-		(property "Reference" "#PWR046"
-			(at 120.65 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 120.65 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6d0f998b-4657-4583-9e26-07502d85adb5")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 80.01 118.11 180)
 		(unit 1)
@@ -2944,83 +2955,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:AP2112K-3.3")
-		(at 120.65 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58e297f9-897d-4102-a8c3-84e362c94cc4")
-		(property "Reference" "U8"
-			(at 120.65 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AP2112K-3.3"
-			(at 120.65 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 120.65 122.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-			(at 120.65 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
-			(at 120.65 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "70fd466e-19f1-42e5-9e9d-dcb09284a5f7")
-		)
-		(pin "3"
-			(uuid "c25e6df5-ab82-48ff-a1d9-a033a1898917")
-		)
-		(pin "4"
-			(uuid "daa95d26-ec1c-48da-9200-4b4650d21885")
-		)
-		(pin "5"
-			(uuid "283ce4ed-d00d-4645-a2e4-e2e25e5be4e8")
-		)
-		(pin "1"
-			(uuid "1f9993e5-0f57-4659-a182-ec7cc44e8158")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 62.23 134.62 0)
 		(unit 1)
@@ -3081,6 +3015,90 @@
 			(project ""
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:TLV75733PDRV")
+		(at 124.46 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64a9deca-4870-4b21-b272-3279f10a2ffa")
+		(property "Reference" "U22"
+			(at 124.46 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV75733PDRV"
+			(at 124.46 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+			(at 124.46 120.015 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv757p.pdf"
+			(at 124.46 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low IQ Small Size Low Dropout Voltage Regulator, Fixed Output 3.3V, WSON6"
+			(at 124.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "8fd803b6-879e-43fc-ac73-32015761f124")
+		)
+		(pin "7"
+			(uuid "e322838c-9b66-481d-ad3d-e95b4d78daa8")
+		)
+		(pin "2"
+			(uuid "15229a5e-091c-4b05-a1d2-1bc47046c3ac")
+		)
+		(pin "6"
+			(uuid "46dec460-9e4b-4a62-86fc-da8318544da3")
+		)
+		(pin "5"
+			(uuid "d19934be-a536-480d-a7d0-e05c127fd508")
+		)
+		(pin "1"
+			(uuid "1c4e5c0a-3f35-4980-982a-0a27cd2ead15")
+		)
+		(pin "4"
+			(uuid "6c9a6d68-81db-4b50-ac89-7872885415f6")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
+					(reference "U22")
 					(unit 1)
 				)
 			)
@@ -3429,6 +3447,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 132.08 129.54 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7480cfdb-fa60-4765-9f0c-052eb2f067d5")
+		(property "Reference" "C50"
+			(at 135.89 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1uF"
+			(at 135.89 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 131.1148 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "649d2a64-2549-4d26-877e-a1d708ce9743")
+		)
+		(pin "1"
+			(uuid "58e19191-1420-4813-81bb-f03dfbba4b5e")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
+					(reference "C50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+1V8")
 		(at 179.07 128.27 270)
 		(unit 1)
@@ -3563,73 +3651,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 113.03 128.27 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d07f58d-f6e7-45c5-b2c9-f07637776388")
-		(property "Reference" "#PWR047"
-			(at 116.84 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 109.22 128.2699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 113.03 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8c2829ee-e5f2-4b7e-93da-50d89bc1ffa3")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 80.01 114.3 180)
 		(unit 1)
@@ -3691,6 +3712,72 @@
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 124.46 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c11618a5-c275-4747-bd73-d3fa1bc291e1")
+		(property "Reference" "#PWR058"
+			(at 124.46 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e022574d-4c1a-457c-bc3b-6d21798c367e")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -3764,17 +3851,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 128.27 128.27 270)
+		(lib_id "power:+5V")
+		(at 116.84 125.73 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e0fb3dc3-7331-4338-a2ae-598c462c0c36")
-		(property "Reference" "#PWR048"
-			(at 124.46 128.27 0)
+		(uuid "ddb72875-4052-4fd2-9bbf-1101e1b2929c")
+		(property "Reference" "#PWR057"
+			(at 120.65 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3782,8 +3869,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 132.08 128.2699 90)
+		(property "Value" "+5V"
+			(at 113.03 125.7299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3792,7 +3879,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 128.27 0)
+			(at 116.84 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3801,7 +3888,74 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 128.27 0)
+			(at 116.84 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 116.84 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46cce186-4b68-464a-873b-84625b0cc579")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 132.08 125.73 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0fb3dc3-7331-4338-a2ae-598c462c0c36")
+		(property "Reference" "#PWR048"
+			(at 128.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 135.89 125.7299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3810,7 +3964,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 128.27 128.27 0)
+			(at 132.08 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3822,7 +3976,7 @@
 			(uuid "f373b282-9544-420c-a410-358fd7192833")
 		)
 		(instances
-			(project ""
+			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
 					(reference "#PWR048")
 					(unit 1)
@@ -3892,6 +4046,74 @@
 			(project ""
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 120.65 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb2f00ab-205c-4fd4-be97-d0e1145fcdab")
+		(property "Reference" "C43"
+			(at 120.65 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 120.65 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 124.46 124.7648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 120.65 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "992e8be8-ecb8-47e4-a569-b0946b3fd4df")
+		)
+		(pin "1"
+			(uuid "1a0b6643-f489-40c7-b643-dfbd6959a6de")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
+					(reference "C43")
 					(unit 1)
 				)
 			)

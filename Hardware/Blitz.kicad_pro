@@ -51,7 +51,18 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        },
+        {
+          "gap": 0.15,
+          "via_gap": 0.3,
+          "width": 0.15
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -180,7 +191,14 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.127,
+        0.254,
+        0.508,
+        0.762,
+        1.27
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +225,20 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.2
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -598,7 +629,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "Blitz",
-    "plot_directory": "",
+    "plot_directory": "../../../Downloads/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -636,7 +667,15 @@
     ],
     [
       "5ef537cb-0f63-4925-9030-5c1558b6d930",
-      "MPU-Bootloader"
+      "MPU-BOOT-FLASH-USB"
+    ],
+    [
+      "ebc2ecdc-d67f-4549-abee-987266e023cd",
+      "MPU-POWER"
+    ],
+    [
+      "b1b7e2f6-54c8-4556-8c77-aada4a0b3b7d",
+      "Programmer"
     ]
   ],
   "text_variables": {}

@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Blitz")
-		(date "2026-02-12")
+		(date "2026-02-19")
 	)
 	(lib_symbols)
 	(sheet
@@ -136,8 +136,8 @@
 		)
 	)
 	(sheet
-		(at 42.545 121.285)
-		(size 12.7 3.81)
+		(at 13.335 174.625)
+		(size 38.1 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -151,8 +151,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "5ef537cb-0f63-4925-9030-5c1558b6d930")
-		(property "Sheetname" "MPU-Bootloader"
-			(at 42.545 120.5734 0)
+		(property "Sheetname" "MPU-BOOT-FLASH-USB"
+			(at 13.335 173.9134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -161,7 +161,7 @@
 			)
 		)
 		(property "Sheetfile" "MPUBootloader.kicad_sch"
-			(at 42.545 125.6796 0)
+			(at 13.335 195.5296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -220,6 +220,48 @@
 		)
 	)
 	(sheet
+		(at 43.815 147.955)
+		(size 23.495 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b1b7e2f6-54c8-4556-8c77-aada4a0b3b7d")
+		(property "Sheetname" "Programmer"
+			(at 43.815 147.2434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Programmer.kicad_sch"
+			(at 43.815 170.1296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 203.2 12.7)
 		(size 81.28 69.85)
 		(exclude_from_sim no)
@@ -257,6 +299,48 @@
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 56.515 95.25)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ebc2ecdc-d67f-4549-abee-987266e023cd")
+		(property "Sheetname" "MPU-POWER"
+			(at 56.515 94.5384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MPU-POWERkicad_sch.kicad_sch"
+			(at 56.515 99.6446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54"
+					(page "8")
 				)
 			)
 		)

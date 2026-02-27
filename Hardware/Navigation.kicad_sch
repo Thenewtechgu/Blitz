@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Blitz")
+		(date "2026-02-19")
 	)
 	(lib_symbols
 		(symbol "ABM8-272-T3:ABM8-272-T3"
@@ -3455,7 +3456,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AP2112K-3.3"
+		(symbol "Regulator_Linear:TLV75733PDRV"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3463,15 +3464,14 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -5.08 5.715 0)
+				(at -3.81 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "AP2112K-3.3"
+			(property "Value" "TLV75733PDRV"
 				(at 0 5.715 0)
 				(effects
 					(font
@@ -3480,17 +3480,18 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
 				(at 0 8.255 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-				(at 0 2.54 0)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv757p.pdf"
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3498,7 +3499,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+			(property "Description" "1A Low IQ Small Size Low Dropout Voltage Regulator, Fixed Output 3.3V, WSON6"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3507,7 +3508,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
+			(property "ki_keywords" "LDO Regulator Fixed Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3516,7 +3517,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23?5*"
+			(property "ki_fp_filters" "WSON*1EP*2x2mm*P0.65mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3525,7 +3526,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "AP2112K-3.3_0_1"
+			(symbol "TLV75733PDRV_0_1"
 				(rectangle
 					(start -5.08 4.445)
 					(end 5.08 -5.08)
@@ -3538,18 +3539,18 @@
 					)
 				)
 			)
-			(symbol "AP2112K-3.3_1_1"
+			(symbol "TLV75733PDRV_1_1"
 				(pin power_in line
 					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "VIN"
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3567,7 +3568,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3585,7 +3586,26 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3604,7 +3624,26 @@
 							)
 						)
 					)
-					(number "4"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3615,14 +3654,14 @@
 				(pin power_out line
 					(at 7.62 2.54 180)
 					(length 2.54)
-					(name "VOUT"
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3892,6 +3931,357 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "TPS2113ADRBR:TPS2113ADRBR"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -12.7 11.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "TPS2113ADRBR"
+				(at -12.7 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "TPS2113ADRBR:SON65P300X300X100-9N"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "VSON-8 Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/TPS2113ADRBR/Texas+Instruments/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/TPS2113ADRBR/Texas+Instruments/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "TPS2113ADRBR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "2.8-V to 5.5-V, 84-mΩ, 1.25-A, power mux with automatic switchover and status output"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "TPS2113ADRBR_0_0"
+				(rectangle
+					(start -12.7 -10.16)
+					(end 12.7 10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "IN1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "IN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "~{EN}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -5.08 0)
+					(length 5.08)
+					(name "VSNS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 7.62 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 2.54 180)
+					(length 5.08)
+					(name "ILIM"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "STAT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -4148,6 +4538,12 @@
 		(uuid "0adc365f-d565-4877-8d9e-3c47811a855a")
 	)
 	(junction
+		(at 85.09 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c976133-4642-4453-82e9-b8cd18dad1ef")
+	)
+	(junction
 		(at 160.02 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4190,6 +4586,12 @@
 		(uuid "4c3c85ff-f9ce-447f-a39f-c24ee68af710")
 	)
 	(junction
+		(at 85.09 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d6f80c4-8492-4b12-b9a2-a639a3b26b25")
+	)
+	(junction
 		(at 17.78 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4218,6 +4620,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66571247-c1bc-4824-80b7-1654da4507a6")
+	)
+	(junction
+		(at 83.82 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67e69195-d01b-423b-b0ab-7af9a0648a91")
 	)
 	(junction
 		(at 265.43 124.46)
@@ -4256,6 +4664,12 @@
 		(uuid "80ebdb7d-a62f-4763-bfb2-73202dcadb24")
 	)
 	(junction
+		(at 154.94 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8651c441-0e7f-4556-af7c-ab74a015dd83")
+	)
+	(junction
 		(at 82.55 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4266,6 +4680,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e9ff069-6fda-4d26-ba3b-db7a0d3b56ff")
+	)
+	(junction
+		(at 147.32 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f856c3b-cbcc-4e0d-8732-22ee1d1c328d")
 	)
 	(junction
 		(at 177.8 143.51)
@@ -4304,16 +4724,16 @@
 		(uuid "c4885a46-a0f6-4494-9169-6958eb7dd4ee")
 	)
 	(junction
-		(at 139.7 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d6aa7dbf-21bd-4250-9b18-76a8e2d7b292")
-	)
-	(junction
 		(at 142.24 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da44c989-0bf1-43b3-ac20-bb8020f5f223")
+	)
+	(junction
+		(at 154.94 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db41126b-4eb1-454c-9e3d-b7e505e5ae05")
 	)
 	(junction
 		(at 63.5 29.21)
@@ -4334,12 +4754,6 @@
 		(uuid "e6274f48-bcc7-490a-ace9-61ffcf9b38f9")
 	)
 	(junction
-		(at 139.7 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e8a32d47-39a8-49d9-bc6f-f7dc0ef3a287")
-	)
-	(junction
 		(at 69.85 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4358,7 +4772,7 @@
 		(uuid "fcab2626-7b67-46c0-b9b3-a3289a9a85ed")
 	)
 	(junction
-		(at 76.2 187.96)
+		(at 29.21 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd9b14f3-ffa9-4c35-86aa-1e721fef311c")
@@ -4495,7 +4909,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 187.96) (xy 80.01 187.96)
+			(xy 29.21 187.96) (xy 33.02 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4545,6 +4959,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 173.99) (xy 154.94 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30e20a34-b037-4573-9a14-ed33ee34cec6")
+	)
+	(wire
+		(pts
 			(xy 63.5 29.21) (xy 69.85 29.21)
 		)
 		(stroke
@@ -4582,6 +5006,16 @@
 			(type default)
 		)
 		(uuid "4a842a1f-5dee-4a89-9ffe-e4fa1d63c756")
+	)
+	(wire
+		(pts
+			(xy 81.28 181.61) (xy 83.82 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b411c6b-c131-4b12-b852-ec04e3b555d3")
 	)
 	(wire
 		(pts
@@ -4645,7 +5079,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 180.34) (xy 76.2 187.96)
+			(xy 29.21 180.34) (xy 29.21 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4705,16 +5139,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 172.72) (xy 139.7 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b5ab6e7-30ed-4240-ad63-7ab6c3d4097e")
-	)
-	(wire
-		(pts
 			(xy 88.9 29.21) (xy 95.25 29.21)
 		)
 		(stroke
@@ -4755,16 +5179,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 180.34) (xy 139.7 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dbfb5c1-8d5e-4249-b659-615afb5cee2b")
-	)
-	(wire
-		(pts
 			(xy 69.85 41.91) (xy 69.85 44.45)
 		)
 		(stroke
@@ -4772,6 +5186,36 @@
 			(type default)
 		)
 		(uuid "90cf6abb-9e17-4efb-9bca-b775c31f8d4f")
+	)
+	(wire
+		(pts
+			(xy 154.94 181.61) (xy 154.94 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9384d85b-f577-4e61-837e-cac5dbe6d04a")
+	)
+	(wire
+		(pts
+			(xy 83.82 181.61) (xy 85.09 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95b79959-d3c3-46a4-8fbd-3dbe32d4ec41")
+	)
+	(wire
+		(pts
+			(xy 147.32 173.99) (xy 147.32 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97c61bba-e459-4f00-aa26-f063226a94fd")
 	)
 	(wire
 		(pts
@@ -4855,6 +5299,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 181.61) (xy 162.56 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0389884-83f4-4d34-a4fa-b5a2e01cf685")
+	)
+	(wire
+		(pts
 			(xy 21.59 49.53) (xy 21.59 161.29)
 		)
 		(stroke
@@ -4935,16 +5389,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 187.96) (xy 147.32 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c25656ab-8e60-4bb8-b10a-b247d09a2a52")
-	)
-	(wire
-		(pts
 			(xy 130.81 34.29) (xy 142.24 34.29)
 		)
 		(stroke
@@ -5005,7 +5449,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 180.34) (xy 76.2 180.34)
+			(xy 33.02 180.34) (xy 29.21 180.34)
 		)
 		(stroke
 			(width 0)
@@ -5092,6 +5536,16 @@
 			(type default)
 		)
 		(uuid "e94e881e-3f8c-4126-9fcf-8e373a9aeabd")
+	)
+	(wire
+		(pts
+			(xy 120.65 173.99) (xy 147.32 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eff0345d-ce2a-4e94-9e31-d9dd0a30cbd6")
 	)
 	(wire
 		(pts
@@ -5199,6 +5653,28 @@
 			)
 		)
 	)
+	(global_label "Nav-3.3V"
+		(shape input)
+		(at 162.56 173.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0def36ec-f4b2-4a1a-b12f-a8f5d3fcb6aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 174.6771 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Nav-5V"
 		(shape input)
 		(at 265.43 118.11 0)
@@ -5289,7 +5765,7 @@
 	)
 	(global_label "Nav-SWD"
 		(shape input)
-		(at 80.01 182.88 180)
+		(at 33.02 182.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5299,7 +5775,7 @@
 		)
 		(uuid "3593ddc1-a0e8-4855-b351-9d1d6157b711")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.0744 182.88 0)
+			(at 21.0844 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5639,28 +6115,6 @@
 			)
 		)
 	)
-	(global_label "Nav-5V"
-		(shape input)
-		(at 132.08 177.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a2b1e4b7-5019-4bd0-b720-6444a31da311")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.7772 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Nav-QSPI_SD0"
 		(shape input)
 		(at 233.68 49.53 180)
@@ -5771,9 +6225,31 @@
 			)
 		)
 	)
+	(global_label "Nav-5V"
+		(shape input)
+		(at 83.82 189.23 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b7c65ca4-93e0-4e3f-87c5-882dda097284")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.82 199.5328 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Nav-SWCLK"
 		(shape input)
-		(at 80.01 177.8 180)
+		(at 33.02 177.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5783,7 +6259,7 @@
 		)
 		(uuid "be31e6f6-6989-464e-a1b5-08e4f9510f20")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.7763 177.8 0)
+			(at 18.7863 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6057,24 +6533,24 @@
 			)
 		)
 	)
-	(global_label "Nav-3.3V"
+	(global_label "Nav-5V"
 		(shape input)
-		(at 154.94 177.8 0)
+		(at 77.47 176.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "fc1c8aaa-68a6-4116-9f20-c5274ed7397f")
+		(uuid "fb67d658-ec7d-4dcc-9a3f-5da986c28206")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.0571 177.8 0)
+			(at 67.1672 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6816,6 +7292,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 62.23 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c130de4-5903-41e1-9951-895105890862")
+		(property "Reference" "#PWR0102"
+			(at 62.23 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 62.23 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 62.23 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6091645d-11df-482a-abfa-d7411cbbbbb4")
+		)
+		(instances
+			(project ""
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 24.13 44.45 0)
 		(unit 1)
@@ -6886,6 +7428,76 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 162.56 177.8 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17d8f369-1481-4087-88b4-ab934e1547f9")
+		(property "Reference" "C54"
+			(at 166.37 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1uF"
+			(at 166.37 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 161.5948 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 162.56 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b844bd77-daee-4b85-a981-db232bed4905")
+		)
+		(pin "1"
+			(uuid "850e3629-60c7-4c46-860a-ac79f88ae39c")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 107.95 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6948,6 +7560,76 @@
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BZV55B5V1")
+		(at 81.28 185.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b5015a5-e99b-4264-b9b6-991ccafd7093")
+		(property "Reference" "D17"
+			(at 83.82 184.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZV55B5V1"
+			(at 83.82 186.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MiniMELF"
+			(at 76.835 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
+			(at 81.28 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
+			(at 81.28 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ace3f615-686b-4bd5-8226-2abaa88d09e0")
+		)
+		(pin "2"
+			(uuid "3844dbc5-44b9-4173-b166-47754c291b38")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "D17")
 					(unit 1)
 				)
 			)
@@ -7307,6 +7989,283 @@
 		)
 	)
 	(symbol
+		(lib_id "TPS2113ADRBR:TPS2113ADRBR")
+		(at 102.87 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28fdd7f7-960c-4851-9751-2e9d8acffa04")
+		(property "Reference" "U3"
+			(at 102.87 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS2113ADRBR"
+			(at 102.87 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TPS2113ADRBR:SON65P300X300X100-9N"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1 mm"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "VSON-8 Texas Instruments"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/TPS2113ADRBR/Texas+Instruments/view-part/?ref=eda"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "C"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TPS2113ADRBR/Texas+Instruments/view-part/?ref=snap"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "TPS2113ADRBR"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "2.8-V to 5.5-V, 84-mΩ, 1.25-A, power mux with automatic switchover and status output"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "1a853826-a601-4526-b1b6-879bee529c9f")
+		)
+		(pin "3"
+			(uuid "f9150dbb-9fee-44bc-a528-98899d4b56c4")
+		)
+		(pin "2"
+			(uuid "9c036e62-b8ba-460e-a0d5-8997adab0a17")
+		)
+		(pin "6"
+			(uuid "0b9f908d-b524-4308-922e-1cf207f3723a")
+		)
+		(pin "8"
+			(uuid "3667cdd7-213b-45cd-a95c-aa5cfb6e4504")
+		)
+		(pin "1"
+			(uuid "e2184ceb-11ce-43db-a2b0-b68a6237d620")
+		)
+		(pin "4"
+			(uuid "6686f643-d4ad-4a4b-847d-c10aa5112b34")
+		)
+		(pin "9"
+			(uuid "8d431565-c6b2-4501-be88-a41f4710b8f6")
+		)
+		(pin "5"
+			(uuid "7745c16d-ca33-46b3-9d7c-e034ff85f9ce")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.71 173.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d57f4ec-edb7-4c25-b5f9-4154d21a9ebc")
+		(property "Reference" "#PWR074"
+			(at 99.06 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.52 173.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 92.71 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce78ea93-f8f9-4ca0-be59-fc487c287d1d")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 242.57 156.21 0)
 		(unit 1)
@@ -7367,72 +8326,6 @@
 			(project ""
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 139.7 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "34bd85c1-a5b7-4857-a310-654d6249b129")
-		(property "Reference" "#PWR05"
-			(at 139.7 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 139.7 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "778d06d9-d0eb-40e5-ae13-d116fe6bd5c0")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7868,6 +8761,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:TLV75733PDRV")
+		(at 154.94 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4cbc97fd-e27d-4956-8926-93562e7ae597")
+		(property "Reference" "U20"
+			(at 154.94 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV75733PDRV"
+			(at 154.94 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+			(at 154.94 168.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv757p.pdf"
+			(at 154.94 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low IQ Small Size Low Dropout Voltage Regulator, Fixed Output 3.3V, WSON6"
+			(at 154.94 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "1bd80bad-1eac-48db-9b36-538ba2dc0ddb")
+		)
+		(pin "7"
+			(uuid "d770b908-4f2d-47af-bf56-8a8d0c398dcd")
+		)
+		(pin "2"
+			(uuid "4fd9c7cc-4b6a-4c9a-9f11-a4abbde1c741")
+		)
+		(pin "6"
+			(uuid "8f4b69d7-8dba-45fb-aad8-1c4fb3b81ec5")
+		)
+		(pin "5"
+			(uuid "2f0654c2-7041-45f1-862d-68cd35520ab2")
+		)
+		(pin "1"
+			(uuid "4a69d92a-cb35-4da6-817b-a63b8d1bc09c")
+		)
+		(pin "4"
+			(uuid "c27100be-502c-40cc-8d30-ae17dfd590ad")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "U20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 193.04 134.62 0)
 		(unit 1)
@@ -8005,6 +8982,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 81.28 189.23 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "551e2e9d-31c0-4b86-be53-88ff1fc9cc8b")
+		(property "Reference" "#PWR05"
+			(at 81.28 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 81.2799 193.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 81.28 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b3687b3-9d95-4b97-9a07-c465c34895e5")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Memory_Flash:W25Q128JVS")
 		(at 243.84 52.07 0)
 		(unit 1)
@@ -8093,6 +9137,139 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 92.71 176.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f0edbab-dbd2-4bb0-95e5-1dfe05fdb160")
+		(property "Reference" "#PWR075"
+			(at 99.06 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.52 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 92.71 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33c2f528-2c25-4e5b-9770-ea4fb8d8cd31")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 154.94 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f64757b-2762-41b8-9919-25c344a6acc6")
+		(property "Reference" "#PWR073"
+			(at 154.94 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 154.94 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7afcfde4-d5e5-48e8-bca0-33e673e9b0f5")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 151.13 38.1 0)
 		(unit 1)
@@ -8156,83 +9333,6 @@
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
 					(reference "C15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:AP2112K-3.3")
-		(at 147.32 180.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5fd586c4-0293-47e2-9482-1cd5240a10f5")
-		(property "Reference" "U3"
-			(at 147.32 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AP2112K-3.3"
-			(at 147.32 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 147.32 172.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-			(at 147.32 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
-			(at 147.32 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "c28455ce-6056-4392-8d35-1eeaa2e67be0")
-		)
-		(pin "2"
-			(uuid "07926707-c0ee-49d1-882f-5b44d9a92229")
-		)
-		(pin "5"
-			(uuid "883e9ee0-942f-41f2-996f-631e825c8779")
-		)
-		(pin "1"
-			(uuid "1834f9de-2b83-45d1-9765-8c0ea8fc71f6")
-		)
-		(pin "3"
-			(uuid "ee52f67f-da79-4b7a-88e7-5167b0a9bc74")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -8309,7 +9409,7 @@
 	)
 	(symbol
 		(lib_id "SM03B-SRSS-TB_LF__SN_:SM03B-SRSS-TB_LF__SN_")
-		(at 90.17 182.88 0)
+		(at 43.18 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8318,7 +9418,7 @@
 		(fields_autoplaced yes)
 		(uuid "658c2b13-9a5a-41f4-9a96-c5004e87ca27")
 		(property "Reference" "J2"
-			(at 96.52 181.6099 0)
+			(at 49.53 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8327,7 +9427,7 @@
 			)
 		)
 		(property "Value" "SM03B-SRSS-TB_LF__SN_"
-			(at 96.52 184.1499 0)
+			(at 49.53 184.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8336,7 +9436,7 @@
 			)
 		)
 		(property "Footprint" "SM03B-SRSS-TB_LF__SN_:JST_SM03B-SRSS-TB_LF__SN_"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8346,7 +9446,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8355,7 +9455,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8364,7 +9464,7 @@
 			)
 		)
 		(property "MF" "JST Sales"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8374,7 +9474,7 @@
 			)
 		)
 		(property "Description_1" "Connector Header Surface Mount, Right Angle 3 position 0.039 (1.00mm)"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8384,7 +9484,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8394,7 +9494,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8404,7 +9504,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/SM03B-SRSS-TB(LF)(SN)/JST/view-part/?ref=eda"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8414,7 +9514,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendation"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8424,7 +9524,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SM03B-SRSS-TB(LF)(SN)/JST/view-part/?ref=snap"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8434,7 +9534,7 @@
 			)
 		)
 		(property "MP" "SM03B-SRSS-TB(LF)(SN)"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8444,7 +9544,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8454,7 +9554,7 @@
 			)
 		)
 		(property "MANUFACTURER" "JST"
-			(at 90.17 182.88 0)
+			(at 43.18 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8557,7 +9657,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 76.2 187.96 0)
+		(at 29.21 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8566,7 +9666,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e74d7ab-9a51-4593-8c52-54c4e73ed208")
 		(property "Reference" "#PWR017"
-			(at 76.2 194.31 0)
+			(at 29.21 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8575,7 +9675,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 193.04 0)
+			(at 29.21 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8583,7 +9683,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 187.96 0)
+			(at 29.21 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8592,7 +9692,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 187.96 0)
+			(at 29.21 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8601,7 +9701,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 187.96 0)
+			(at 29.21 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8755,101 +9855,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BZV55B5V1")
-		(at 135.89 177.8 180)
+		(lib_id "Device:C")
+		(at 88.9 176.53 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "836c9e09-51a7-4890-ad62-f04cfb14b7ad")
-		(property "Reference" "D5"
-			(at 135.89 171.45 0)
+		(uuid "7ded82bb-76f9-43a4-9d80-51d37b1fbb78")
+		(property "Reference" "C49"
+			(at 88.9 168.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "BZV55B5V1"
-			(at 135.89 173.99 0)
+		(property "Value" "22uF"
+			(at 88.9 171.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
-			(at 135.89 173.355 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
-			(at 135.89 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
-			(at 135.89 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7ee1f063-5dc2-4528-9b27-a35cc52bbccd")
-		)
-		(pin "2"
-			(uuid "377bd5ab-505e-466a-a9cf-e6105889f206")
-		)
-		(instances
-			(project "Blitz"
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 226.06 74.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "843891c9-2d29-482e-acd2-b0795e96eead")
-		(property "Reference" "R4"
-			(at 226.06 72.644 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "DNF"
-			(at 226.06 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 226.06 76.708 90)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 92.71 175.5648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8858,7 +9890,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 226.06 74.93 0)
+			(at 88.9 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8866,8 +9898,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 226.06 74.93 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 88.9 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8876,15 +9908,82 @@
 			)
 		)
 		(pin "2"
-			(uuid "e4fb7d31-8c4c-422f-8efa-9a2da0ca74b6")
+			(uuid "be154289-b56d-47f3-8acd-799719597365")
 		)
 		(pin "1"
-			(uuid "0643191c-bc5b-47a4-878d-e9fe57aa0c45")
+			(uuid "d4b7e234-f16f-45e5-b538-09a414c71cbf")
 		)
 		(instances
-			(project ""
+			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
-					(reference "R4")
+					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 179.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "82366bb0-576d-4abc-96a3-7cb91fe824e3")
+		(property "Reference" "R30"
+			(at 124.46 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "64"
+			(at 124.46 178.816 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 124.46 180.848 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 124.46 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1a33eb91-691c-4ba4-83fd-4af015231a1e")
+		)
+		(pin "1"
+			(uuid "75ad3062-207c-454e-99a8-48368dc6901c")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -9025,33 +10124,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 226.06 80.01 90)
+		(lib_id "Device:C")
+		(at 151.13 173.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8d0e1895-1528-47f7-868f-b3f18b917d67")
-		(property "Reference" "R19"
-			(at 226.06 77.724 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "DNF"
-			(at 226.06 80.01 90)
+		(fields_autoplaced yes)
+		(uuid "8f5e8a50-5557-485b-b469-db257384e4e1")
+		(property "Reference" "C53"
+			(at 151.13 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 226.06 81.788 90)
+		(property "Value" "1uF"
+			(at 151.13 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 154.94 173.0248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9060,7 +10159,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 226.06 80.01 0)
+			(at 151.13 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9068,8 +10167,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 226.06 80.01 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 151.13 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9078,15 +10177,218 @@
 			)
 		)
 		(pin "2"
-			(uuid "111cb559-d1ba-4034-9815-10ec09843b63")
+			(uuid "e61e7ebc-9de1-4f48-862a-7a9d0f849594")
 		)
 		(pin "1"
-			(uuid "4c6ee191-1a38-4997-a2e3-fbabeaeb2f42")
+			(uuid "362f5e14-0f4c-4836-a41e-cac59e20c04a")
 		)
 		(instances
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
-					(reference "R19")
+					(reference "C53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BZV55B5V1")
+		(at 81.28 173.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fe7c654-8fa1-4034-bc33-071e31f69702")
+		(property "Reference" "D4"
+			(at 81.28 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BZV55B5V1"
+			(at 81.28 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MiniMELF"
+			(at 81.28 169.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
+			(at 81.28 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
+			(at 81.28 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cb25198-3433-4cec-a4fd-2176ed97e107")
+		)
+		(pin "2"
+			(uuid "7def5c75-8b9a-4340-a23c-d7759ec0c8d8")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 77.47 173.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93eefdbf-3002-4746-ad99-bf70b938de27")
+		(property "Reference" "#PWR04"
+			(at 81.28 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 73.66 173.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 77.47 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8537928-a833-4be4-a62b-92ef928e3ec9")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BZV55B5V1")
+		(at 81.28 176.53 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "942fd8e0-3248-4540-9168-4131f38126af")
+		(property "Reference" "D5"
+			(at 81.28 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BZV55B5V1"
+			(at 81.28 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MiniMELF"
+			(at 81.28 172.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
+			(at 81.28 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
+			(at 81.28 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37149a13-6f89-468f-82dc-8538bf5bfd84")
+		)
+		(pin "2"
+			(uuid "9bb79b26-0f21-4bb6-b4e3-c63d4b2011e0")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -9156,6 +10458,74 @@
 			(project ""
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 226.06 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "99d4c3a0-4c7d-42be-9e5b-f8a13acdaf67")
+		(property "Reference" "R4"
+			(at 226.06 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "DNP"
+			(at 226.06 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 226.06 76.708 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 226.06 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88ef7539-59a7-463e-938a-991e8837d30d")
+		)
+		(pin "2"
+			(uuid "8a2b1fa8-96b5-4401-9828-8da79709acd0")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -9501,17 +10871,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 132.08 172.72 90)
+		(lib_id "Device:C")
+		(at 88.9 173.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b33cec18-9062-4048-8801-3b14d2c7d5b3")
-		(property "Reference" "#PWR04"
-			(at 135.89 172.72 0)
+		(uuid "b200911d-0c71-4ac0-819e-14bff7fa6c6e")
+		(property "Reference" "C48"
+			(at 88.9 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 88.9 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 92.71 173.0248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9519,17 +10905,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 128.27 172.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 172.72 0)
+		(property "Datasheet" "~"
+			(at 88.9 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9537,8 +10914,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 132.08 172.72 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 88.9 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9546,22 +10923,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 132.08 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "79fadd82-c823-4e45-bdf5-cbb53e367f89")
 		)
 		(pin "1"
-			(uuid "3e2f2c78-8805-4d28-be24-f26a4465447a")
+			(uuid "e49f37da-2c5e-4919-9862-cb7e47d13fc9")
 		)
 		(instances
-			(project ""
+			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
-					(reference "#PWR04")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -9812,6 +11183,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 128.27 179.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9770dc9-14bd-43c5-9d46-e894e2b89770")
+		(property "Reference" "#PWR077"
+			(at 134.62 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 179.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "740a6cb4-c724-4fe1-a897-3bf5ac9acaf8")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 252.73 33.02 0)
 		(unit 1)
@@ -10013,33 +11451,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BZV55B5V1")
-		(at 135.89 172.72 180)
+		(lib_id "power:GND")
+		(at 120.65 189.23 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d44d160b-cb10-4c84-b9c2-19e09fe5957d")
-		(property "Reference" "D4"
-			(at 135.89 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BZV55B5V1"
-			(at 135.89 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
-			(at 135.89 168.275 0)
+		(uuid "d6f839e1-7616-4ab2-b6e6-27ebf6defbbd")
+		(property "Reference" "#PWR076"
+			(at 127 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10047,8 +11469,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
-			(at 135.89 172.72 0)
+		(property "Value" "GND"
+			(at 124.46 189.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10056,8 +11487,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
-			(at 135.89 172.72 0)
+		(property "Datasheet" ""
+			(at 120.65 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 120.65 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10066,15 +11506,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "ad5d6528-faad-4980-ad35-c0fd791490af")
-		)
-		(pin "2"
-			(uuid "f6a8514a-5616-4558-a70b-a9abac93126a")
+			(uuid "ced16419-77d4-43e6-a16b-66e527000bc6")
 		)
 		(instances
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
-					(reference "D4")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -10420,6 +11857,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:BZV55B5V1")
+		(at 83.82 185.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1930f8c-44ae-4c76-a56c-2618069df30c")
+		(property "Reference" "D16"
+			(at 86.36 184.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZV55B5V1"
+			(at 86.36 186.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MiniMELF"
+			(at 79.375 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
+			(at 83.82 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
+			(at 83.82 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e70652c-20c1-4558-89aa-0118434e969e")
+		)
+		(pin "2"
+			(uuid "429fadbc-f18a-4304-8ef4-44f7df83da4c")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 114.3 33.02 0)
 		(unit 1)
@@ -10621,6 +12128,74 @@
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 226.06 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb97362f-2a9e-4f00-9861-4f98679f43aa")
+		(property "Reference" "R19"
+			(at 226.06 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "DNP"
+			(at 226.06 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 226.06 81.788 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 226.06 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5090faa4-e9c9-49d6-b484-72b8f0511ae2")
+		)
+		(pin "2"
+			(uuid "1c842ca4-d886-45a6-b23f-7ec782a290ef")
+		)
+		(instances
+			(project "Blitz"
+				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/b3498ea0-4292-4915-ba0e-b978ac08d83f"
+					(reference "R19")
 					(unit 1)
 				)
 			)
