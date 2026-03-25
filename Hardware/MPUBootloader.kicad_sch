@@ -1946,16 +1946,16 @@
 		(uuid "2e1b9f58-1737-473e-9c8d-3aa7cf962827")
 	)
 	(junction
-		(at 248.92 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "47ccb784-f59b-444d-a7e1-f1cb7d3a956f")
-	)
-	(junction
 		(at 248.92 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c3406272-23da-4f1b-8683-c4e2d2a1dda9")
+		(uuid "ac0addc3-f110-424a-9e1c-f28ebd1dd967")
+	)
+	(junction
+		(at 248.92 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c61ce861-fde5-47ce-b067-1863c6665c3c")
 	)
 	(junction
 		(at 226.06 72.39)
@@ -1975,7 +1975,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 48.26) (xy 248.92 49.53)
+			(xy 248.92 46.99) (xy 248.92 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2015,6 +2015,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 48.26) (xy 256.54 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95c6c930-5470-461a-af99-2a51ac8547b7")
+	)
+	(wire
+		(pts
 			(xy 257.81 142.24) (xy 257.81 143.51)
 		)
 		(stroke
@@ -2025,6 +2035,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 48.26) (xy 248.92 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b776ebab-e193-4202-a7b3-7b0da286ea7b")
+	)
+	(wire
+		(pts
 			(xy 248.92 52.07) (xy 248.92 53.34)
 		)
 		(stroke
@@ -2032,6 +2052,16 @@
 			(type default)
 		)
 		(uuid "c66c770b-0d1f-45e6-9913-c46cd48d1418")
+	)
+	(wire
+		(pts
+			(xy 248.92 53.34) (xy 256.54 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb3a5462-2495-4736-83a7-bffeeb51e1b6")
 	)
 	(wire
 		(pts
@@ -2051,17 +2081,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "d1265512-5129-4466-a09d-57dfb07ed9cc")
-	)
-	(wire
-		(pts
-			(xy 248.92 46.99) (xy 248.92 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd50d78e-6463-450d-b7ad-01b7d897912d")
+		(uuid "f810e212-833a-4f24-8163-f02317b5ca21")
 	)
 	(wire
 		(pts
@@ -2764,6 +2784,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 252.73 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 252.73 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cda2d4df-bf88-48d8-8c02-730fda2eb9bd")
 		)
@@ -2841,73 +2879,6 @@
 			(project ""
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/5ef537cb-0f63-4925-9030-5c1558b6d930"
 					(reference "#PWR099")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BZV55B5V1")
-		(at 252.73 48.26 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "23190457-d972-4d46-9f29-951b23f69c3a")
-		(property "Reference" "D14"
-			(at 254.508 46.482 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BZV55B5V1"
-			(at 252.73 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
-			(at 252.73 43.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
-			(at 252.73 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
-			(at 252.73 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9e014cc-ce18-48bf-ab6d-37ff88d0ee83")
-		)
-		(pin "2"
-			(uuid "01de3884-d303-4dd5-9885-65b033143a93")
-		)
-		(instances
-			(project "Blitz"
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/5ef537cb-0f63-4925-9030-5c1558b6d930"
-					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -3169,6 +3140,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 77.47 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 77.47 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "c0e1ec4e-5d5e-4cf1-8a0a-2ea13e02d21c")
 		)
@@ -3416,6 +3405,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 26.67 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 26.67 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6f0464d9-0df2-4c76-af8d-8406014f0051")
 		)
@@ -3476,6 +3483,24 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 233.68 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 233.68 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 233.68 49.53 0)
 			(effects
 				(font
@@ -3551,7 +3576,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b029b89b-6c0b-4ee2-a50b-ba0f41128e9b")
 		(property "Reference" "PROG1"
 			(at 120.65 68.072 90)
@@ -3569,7 +3594,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
 			(at 114.3 71.628 90)
 			(effects
 				(font
@@ -3589,6 +3614,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 114.3 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 114.3 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 114.3 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3658,6 +3701,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 173.99 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 173.99 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 173.99 143.51 0)
 			(effects
 				(font
@@ -3753,6 +3814,24 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 266.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 266.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 266.7 143.51 0)
 			(effects
 				(font
@@ -3894,6 +3973,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 252.73 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 252.73 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4e18ee41-a741-407e-86f5-beb052217d19")
 		)
@@ -3904,74 +4001,6 @@
 			(project ""
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/5ef537cb-0f63-4925-9030-5c1558b6d930"
 					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BZV55B5V1")
-		(at 252.73 53.34 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8dff2aa-9a2a-4786-ae3f-50270b34b8ad")
-		(property "Reference" "D15"
-			(at 252.73 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BZV55B5V1"
-			(at 252.73 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
-			(at 252.73 48.895 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
-			(at 252.73 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
-			(at 252.73 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1541b603-afb4-47a8-b888-9ba694500b65")
-		)
-		(pin "2"
-			(uuid "a5e38646-3935-4318-93cc-5b9afeb46056")
-		)
-		(instances
-			(project "Blitz"
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/5ef537cb-0f63-4925-9030-5c1558b6d930"
-					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -4022,6 +4051,24 @@
 			)
 		)
 		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
+			(at 252.73 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 252.73 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 252.73 34.29 0)
 			(effects
 				(font
@@ -4091,6 +4138,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 274.32 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 274.32 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 274.32 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)

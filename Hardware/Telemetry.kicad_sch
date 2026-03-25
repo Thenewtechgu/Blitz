@@ -5741,12 +5741,6 @@
 		(uuid "11f04307-f856-427a-ac69-29147bf67381")
 	)
 	(junction
-		(at 264.16 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1871f369-82f8-4f77-bfee-620f5624f687")
-	)
-	(junction
 		(at 114.3 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5885,6 +5879,12 @@
 		(uuid "88088c7f-ed2a-4a43-9a33-b513d7ee9350")
 	)
 	(junction
+		(at 264.16 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fcaf444-e5cb-485d-9179-aa5c3173ee5b")
+	)
+	(junction
 		(at 124.46 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5921,16 +5921,16 @@
 		(uuid "a888d246-5ab6-493a-b543-140e92a3f202")
 	)
 	(junction
+		(at 264.16 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0984416-3a79-4d85-96c7-360050950c5c")
+	)
+	(junction
 		(at 27.94 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0a4629a-417a-45b6-902d-73157b261490")
-	)
-	(junction
-		(at 264.16 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b68e0838-8456-4ebb-976a-59246e200e2e")
 	)
 	(junction
 		(at 88.9 36.83)
@@ -6061,6 +6061,16 @@
 			(type default)
 		)
 		(uuid "1452c2e1-8ce1-428d-88e6-d999117cf618")
+	)
+	(wire
+		(pts
+			(xy 264.16 132.08) (xy 264.16 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15e6f7c8-a0db-4ba6-8187-30be194b4a10")
 	)
 	(wire
 		(pts
@@ -6384,6 +6394,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 132.08) (xy 271.78 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75964fb3-ef20-4fdb-aee8-a908ac40c5d0")
+	)
+	(wire
+		(pts
 			(xy 166.37 34.29) (xy 166.37 44.45)
 		)
 		(stroke
@@ -6461,16 +6481,6 @@
 			(type default)
 		)
 		(uuid "82711cd6-c7ca-4c28-b530-1976e1c44aab")
-	)
-	(wire
-		(pts
-			(xy 264.16 135.89) (xy 264.16 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "830a91f6-5e6d-455f-87ed-c9ac6053efb7")
 	)
 	(wire
 		(pts
@@ -6614,7 +6624,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 137.16) (xy 264.16 138.43)
+			(xy 264.16 135.89) (xy 264.16 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6631,6 +6641,16 @@
 			(type default)
 		)
 		(uuid "b89f4a8b-6087-454b-8890-bdca35356293")
+	)
+	(wire
+		(pts
+			(xy 264.16 137.16) (xy 264.16 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd6a5d18-9b05-4c5d-99fa-b80f5703b630")
 	)
 	(wire
 		(pts
@@ -6764,6 +6784,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 137.16) (xy 271.78 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5f4d8f9-140c-4ebf-9b58-acd7402be3b2")
+	)
+	(wire
+		(pts
 			(xy 184.15 130.81) (xy 184.15 143.51)
 		)
 		(stroke
@@ -6821,16 +6851,6 @@
 			(type default)
 		)
 		(uuid "f7b86597-ce6e-4ff4-a45a-9f1bfcf37d59")
-	)
-	(wire
-		(pts
-			(xy 264.16 132.08) (xy 264.16 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7d2d31d-4d0a-445d-af21-f8e2461d8b55")
 	)
 	(wire
 		(pts
@@ -8457,6 +8477,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 137.16 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 137.16 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a1170adc-7f3b-4796-8b8f-947ff29f6270")
 		)
@@ -8658,6 +8696,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 24.13 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 24.13 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "54cd5f1e-b31b-43ba-9b83-1affc69aaebf")
 		)
@@ -8742,74 +8798,6 @@
 	)
 	(symbol
 		(lib_id "Diode:BZV55B5V1")
-		(at 267.97 137.16 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "107a4a92-cdcc-486c-8d68-f7263bdf8195")
-		(property "Reference" "D10"
-			(at 267.97 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BZV55B5V1"
-			(at 267.97 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
-			(at 267.97 132.715 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
-			(at 267.97 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
-			(at 267.97 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f6d55ace-205f-4a62-94c0-064305d7ed66")
-		)
-		(pin "2"
-			(uuid "3d45715a-084c-4ccc-ab87-423a503ff987")
-		)
-		(instances
-			(project "Blitz"
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/1cc96743-78fe-4fb8-9377-b8cf3db2d524"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BZV55B5V1")
 		(at 86.36 166.37 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8853,6 +8841,24 @@
 			)
 		)
 		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
+			(at 86.36 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 86.36 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 86.36 166.37 0)
 			(effects
 				(font
@@ -8930,6 +8936,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 120.65 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 120.65 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1fc1a90e-ad36-4a44-8717-d77afe003419")
 		)
@@ -8992,6 +9016,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 199.39 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 199.39 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 199.39 149.86 0)
 			(effects
 				(font
@@ -9396,6 +9438,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 76.2 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 76.2 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2a818db6-5b1c-4d9d-ab32-d844a0fd1a8c")
 		)
@@ -9418,7 +9478,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "32a87481-d772-4194-bd39-88c7e9ab0a68")
 		(property "Reference" "DNP3"
 			(at 232.41 74.93 90)
@@ -9457,6 +9517,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 232.41 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 232.41 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 232.41 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9532,6 +9610,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 267.97 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 267.97 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8f27a81d-e50e-4b76-802a-9037fab3e046")
 		)
@@ -9593,6 +9689,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 93.98 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 93.98 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 93.98 166.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9803,6 +9917,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 204.47 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 204.47 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f877c554-0b2c-4179-92fc-1adc3fa118ad")
 		)
@@ -9933,6 +10065,24 @@
 		)
 		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
 			(at 88.9 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 88.9 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 88.9 177.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10075,6 +10225,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 160.02 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 160.02 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9ebc3c63-4a15-4146-a85a-770969c2b945")
 		)
@@ -10150,6 +10318,24 @@
 			)
 		)
 		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
+			(at 86.36 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 86.36 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 86.36 168.91 0)
 			(effects
 				(font
@@ -10291,6 +10477,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 39.37 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 39.37 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "168105db-37d9-4ab4-b9ca-42cfc5a668f5")
 		)
@@ -10361,6 +10565,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 199.39 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 199.39 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "917435d9-ee6b-41c2-9cf8-9f2e6c665361")
 		)
@@ -10421,6 +10643,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 39.37 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 39.37 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 39.37 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10553,6 +10793,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 240.03 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 240.03 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10695,6 +10953,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 95.25 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 95.25 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "73180a15-0efa-443b-99f7-7d3adb51474b")
 		)
@@ -10756,6 +11032,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 107.95 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 107.95 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 107.95 33.02 0)
 			(effects
 				(font
@@ -10899,6 +11193,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 82.55 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 82.55 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1cc4b2af-9fc5-4b93-b154-1dafa6a2973d")
 		)
@@ -10921,7 +11233,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6c50e5c7-cd3e-4833-9139-9ba8ef0c0a99")
 		(property "Reference" "DNP4"
 			(at 238.76 82.55 90)
@@ -10960,6 +11272,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 238.76 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 238.76 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 238.76 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11037,6 +11367,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 124.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 124.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "373cb5c5-83a0-46fc-96d0-c728c8e90143")
 		)
@@ -11097,6 +11445,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 246.38 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 246.38 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 246.38 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11165,6 +11531,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 30.48 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 30.48 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 30.48 44.45 0)
 			(effects
 				(font
@@ -11250,73 +11634,6 @@
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/1cc96743-78fe-4fb8-9377-b8cf3db2d524"
 					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BZV55B5V1")
-		(at 267.97 132.08 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8bbe3bb8-d817-4e45-a6a6-bc9aefc4cd68")
-		(property "Reference" "D9"
-			(at 269.748 130.302 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BZV55B5V1"
-			(at 267.97 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
-			(at 267.97 127.635 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf"
-			(at 267.97 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
-			(at 267.97 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "63c3a196-e41e-4c1b-8003-48987da0b5c6")
-		)
-		(pin "2"
-			(uuid "ff56029f-a441-49e4-b184-c6b37ff0cf06")
-		)
-		(instances
-			(project "Blitz"
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/1cc96743-78fe-4fb8-9377-b8cf3db2d524"
-					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -11442,6 +11759,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 157.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 157.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a8c3f4d8-2aad-493c-a9bb-173b2463416b")
 		)
@@ -11502,6 +11837,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 129.54 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 129.54 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 129.54 171.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11718,6 +12071,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 191.77 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 191.77 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "aef43f73-d407-4a8f-b350-1baaf60bdf31")
 		)
@@ -11785,6 +12156,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 93.98 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 93.98 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 93.98 168.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11929,6 +12318,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 184.15 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 184.15 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e0963ffc-ba99-4c12-a6bb-cbc0bf170dea")
 		)
@@ -11990,6 +12397,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 148.59 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 148.59 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 148.59 38.1 0)
 			(effects
 				(font
@@ -12140,6 +12565,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 38.1 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 38.1 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "39d747ce-33f7-4c94-beff-766c9b6505df")
 		)
@@ -12208,6 +12651,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 35.56 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 35.56 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bc28db95-628e-4a7c-a686-69424bf14bd7")
 		)
@@ -12269,6 +12730,24 @@
 		)
 		(property "Description" "Resistor"
 			(at 267.97 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 267.97 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 267.97 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12404,6 +12883,24 @@
 		)
 		(property "Description" "5.1V, 500mW, 2%, Zener diode, MiniMELF"
 			(at 86.36 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 86.36 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 86.36 177.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12748,6 +13245,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 185.42 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 185.42 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "eeb41c64-7b86-42bd-80c1-338d1da188d4")
 		)
@@ -12848,6 +13363,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 234.95 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 234.95 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9fd69d5c-6256-4b09-a00b-6f6137e1edbc")
 		)
@@ -12917,6 +13450,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 101.6 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 101.6 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7656482c-79cd-40a8-80ef-9e0ba717e8e9")
 		)
@@ -12978,6 +13529,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 40.64 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 40.64 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 40.64 36.83 0)
 			(effects
 				(font
@@ -13189,6 +13758,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 88.9 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 88.9 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "65527506-d16c-499a-83dd-5d3f5cc666cd")
 		)
@@ -13252,6 +13839,24 @@
 		)
 		(property "Description" "128Mbit / 16MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8"
 			(at 195.58 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 195.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 195.58 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13363,6 +13968,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 231.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 231.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8c46278c-4841-42f0-b0a3-2c294ff706f3")
 		)
@@ -13431,6 +14054,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 156.21 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 156.21 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3acbdbba-5426-4b84-b7d7-8264438c2d1a")
 		)
@@ -13491,6 +14132,24 @@
 			)
 		)
 		(property "Description" "Micro SD Card Socket with two card detection pins"
+			(at 142.24 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 142.24 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 142.24 137.16 0)
 			(effects
 				(font
@@ -13594,6 +14253,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 267.97 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 267.97 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7a350ef1-4f40-49ad-a008-3ceb10ab3112")
 		)
@@ -13658,6 +14335,24 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 232.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 232.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 232.41 95.25 0)
 			(effects
 				(font
@@ -13731,6 +14426,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 167.64 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 167.64 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 167.64 170.18 0)
 			(effects
 				(font
@@ -13874,6 +14587,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "78f3bbe1-8fd3-4376-b90b-e586550dfeaa")
 		)
@@ -13935,6 +14666,24 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 69.85 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 69.85 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 69.85 33.02 0)
 			(effects
 				(font
@@ -14070,6 +14819,24 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 248.92 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 248.92 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 248.92 133.35 0)
 			(effects
 				(font
@@ -14379,6 +15146,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 107.95 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 107.95 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "e8991f79-df6d-4c60-ad6d-e65f86817487")
 		)
@@ -14571,6 +15356,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 40.64 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 40.64 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "S2"
 			(uuid "96f580c4-2507-429d-b061-700f129fd870")
 		)
@@ -14708,6 +15511,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 124.46 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 124.46 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 124.46 93.98 0)
 			(effects
 				(font

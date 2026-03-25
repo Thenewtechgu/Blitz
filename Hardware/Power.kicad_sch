@@ -148,130 +148,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Mechanical:Batsolderpad"
 			(pin_numbers
 				(hide yes)
@@ -772,347 +648,40 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SPM4012T-2R2M:SPM4012T-2R2M"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "L"
-				(at -10.16 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "SPM4012T-2R2M"
-				(at -10.16 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "SPM4012T-2R2M:IND_SPM4012T-2R2M"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "TDK"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "1.2 mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "NON STANDARD-2 TDK"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/SPM4012T-2R2M/TDK/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "N/A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SPM4012T-2R2M/TDK/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "SPM4012T-2R2M"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1500203&manufacturer=TDK&part_name=SPM4012T-2R2M&search_term=2.2µh"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Surface Mount Power Inductor, SPM Series, 2.2 H, 20%, Shielded, 0.095 ohm, 2.9 A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "TDK"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "SPM4012T-2R2M_0_0"
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -7.62 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -5.08 0)
-					(mid -3.81 1.2645)
-					(end -2.54 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.54 0)
-					(mid -1.27 1.2645)
-					(end 0 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 1.27 1.2645)
-					(end 2.54 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.54 0)
-					(mid 3.81 1.2645)
-					(end 5.08 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 7.62 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -12.7 0 0)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 0 180)
-					(length 5.08)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SY8205FCC:SY8205FCC"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "Regulator_Switching:TPS54302"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -10.16 13.335 0)
+				(at -7.62 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
-			(property "Value" "SY8205FCC"
-				(at -10.16 -15.24 0)
+			(property "Value" "TPS54302"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
-			(property "Footprint" "SY8205FCC:VREG_SY8205FCC"
-				(at 0 0 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 1.27 -8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54302.pdf"
+				(at -7.62 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1120,130 +689,37 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Silergy"
+			(property "Description" "3A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "1.60 mm"
+			(property "ki_keywords" "switching buck converter power-supply voltage regulator emi spread spectrum"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Package" "Package"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/SY8205FCC/Silergy/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "0.4"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SY8205FCC/Silergy/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "SY8205FCC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "High-Efficiency Fast Response，5A, 30V Input Synchronous Step Down Regulator"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "Silergy"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "SY8205FCC_0_0"
+			(symbol "TPS54302_0_1"
 				(rectangle
-					(start -10.16 -12.7)
-					(end 10.16 12.7)
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1252,165 +728,112 @@
 						(type background)
 					)
 				)
-				(pin passive line
-					(at -15.24 2.54 0)
-					(length 5.08)
-					(name "EN"
+			)
+			(symbol "TPS54302_1_1"
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "VIN"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at -15.24 -2.54 0)
-					(length 5.08)
-					(name "SS"
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
 						(effects
 							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 10.16 180)
-					(length 5.08)
-					(name "PVIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 10.16 180)
-					(length 5.08)
-					(hide yes)
-					(name "PVIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 15.24 7.62 180)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 2.54 180)
-					(length 5.08)
-					(name "LX"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -2.54 180)
-					(length 5.08)
-					(name "BS"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -5.08 180)
-					(length 5.08)
-					(name "FB"
-						(effects
-							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "5"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin power_in line
-					(at 15.24 -10.16 180)
-					(length 5.08)
+					(at 0 -7.62 90)
+					(length 2.54)
 					(name "GND"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "BOOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -2039,24 +1462,6 @@
 		(uuid "704254cd-ded6-4b51-a442-b07cb7326d47")
 	)
 	(junction
-		(at 72.39 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b2198b1-eabb-468b-b27f-0e62de516637")
-	)
-	(junction
-		(at 80.01 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9c086546-874a-4dfe-81e7-347968b5209c")
-	)
-	(junction
-		(at 73.66 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9ecc7a1e-0847-430e-a650-2c2a2b1b22e2")
-	)
-	(junction
 		(at 124.46 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2068,12 +1473,6 @@
 		(color 0 0 0 0)
 		(uuid "cb0a9a3c-d087-4f0b-aade-c643bf1fe121")
 	)
-	(junction
-		(at 73.66 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f8cb032c-4d30-4284-80db-bb11bfbf1a81")
-	)
 	(wire
 		(pts
 			(xy 124.46 125.73) (xy 124.46 133.35)
@@ -2083,106 +1482,6 @@
 			(type default)
 		)
 		(uuid "1364ef0d-179b-4cb5-83c0-99f56f34d0f6")
-	)
-	(wire
-		(pts
-			(xy 57.15 128.27) (xy 57.15 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17eb52b6-7ce7-44bc-be9b-fe638d18bc0e")
-	)
-	(wire
-		(pts
-			(xy 73.66 128.27) (xy 81.28 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23d644cc-42e9-4091-95af-ac25b3288427")
-	)
-	(wire
-		(pts
-			(xy 87.63 140.97) (xy 73.66 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35190bca-fe3f-438b-863e-0d07daf771a7")
-	)
-	(wire
-		(pts
-			(xy 73.66 135.89) (xy 80.01 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3650b611-189f-4267-96d2-833fba032e46")
-	)
-	(wire
-		(pts
-			(xy 87.63 138.43) (xy 87.63 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ac09da2-2885-445c-b62a-6b121b7c2afc")
-	)
-	(wire
-		(pts
-			(xy 81.28 133.35) (xy 81.28 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70e35f67-5e75-44aa-86e4-1cf806e8615d")
-	)
-	(wire
-		(pts
-			(xy 43.18 128.27) (xy 57.15 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "748ad5f9-8319-4e86-a8a2-7a816bb68e76")
-	)
-	(wire
-		(pts
-			(xy 72.39 120.65) (xy 73.66 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8dc97b0-5080-4f4c-aaf0-3bfa58ad383b")
-	)
-	(wire
-		(pts
-			(xy 80.01 135.89) (xy 80.01 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abc38dee-6348-46b6-aedc-4c6419125364")
-	)
-	(wire
-		(pts
-			(xy 80.01 135.89) (xy 80.01 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b67cc36e-2fa7-42ed-80d6-6b8725015f69")
 	)
 	(wire
 		(pts
@@ -2216,16 +1515,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 120.65) (xy 72.39 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc1a7d6f-f96c-4849-a9ce-b4597fd00b24")
-	)
-	(wire
-		(pts
 			(xy 124.46 133.35) (xy 132.08 133.35)
 		)
 		(stroke
@@ -2243,207 +1532,6 @@
 			(type default)
 		)
 		(uuid "fde9aabb-e99f-4a31-b1a3-1b3d99e5f682")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 87.63 134.62 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0263ad16-c13c-47ac-bb1d-ae7b53961ceb")
-		(property "Reference" "#PWR036"
-			(at 83.82 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 91.44 134.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 87.63 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bd70118a-bb93-4842-b6a0-be4913ae4ec4")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 83.82 138.43 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0f7d7e94-15cd-43ee-999a-dca885d57b17")
-		(property "Reference" "R24"
-			(at 83.82 136.906 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "6.04k"
-			(at 84.074 138.43 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 83.82 140.208 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 83.82 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db646265-e49d-451f-ab68-1344d845eb37")
-		)
-		(pin "2"
-			(uuid "6e152814-e11d-4791-8736-ecd3f1a82ea9")
-		)
-		(instances
-			(project "Blitz"
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+24V")
-		(at 72.39 120.65 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1d599342-e35d-486b-89d2-ca69356ab392")
-		(property "Reference" "#PWR037"
-			(at 68.58 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 76.2 120.6499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 72.39 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3c094236-315c-4525-88ae-b17b1f10c00d")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Regulator_Linear:AP2112K-1.8")
@@ -2490,6 +1578,24 @@
 			)
 		)
 		(property "Description" "600mA low dropout linear regulator, with enable pin, 2.5V-6V input voltage range, 1.8V fixed positive output, SOT-23-5"
+			(at 171.45 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 171.45 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 171.45 130.81 0)
 			(effects
 				(font
@@ -2645,6 +1751,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 36.83 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 36.83 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b889ed91-10ea-44ac-b166-b7bb8e32bfc9")
 		)
@@ -2777,6 +1901,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 124.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 124.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "8fd803b6-879e-43fc-ac73-32015761f124")
 		)
@@ -2802,73 +1944,6 @@
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
 					(reference "U22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 35.56 133.35 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64fe0d0c-27fc-4e34-983c-34d32611538c")
-		(property "Reference" "#PWR039"
-			(at 29.21 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 31.75 133.3499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ef8f983-1f98-4cd7-895d-0a0f54e27253")
-		)
-		(instances
-			(project "Blitz"
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -2922,6 +1997,24 @@
 			)
 		)
 		(property "Description" "Solder pad"
+			(at 58.42 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 58.42 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 58.42 157.48 0)
 			(effects
 				(font
@@ -3063,6 +2156,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "649d2a64-2549-4d26-877e-a1d708ce9743")
 		)
@@ -3146,408 +2257,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SPM4012T-2R2M:SPM4012T-2R2M")
-		(at 86.36 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d876ee6-5ba6-4dd5-80c6-e8fc894be68f")
-		(property "Reference" "L2"
-			(at 86.36 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SPM4012T-2R2M"
-			(at 86.36 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SPM4012T-2R2M:IND_SPM4012T-2R2M"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "TDK"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.2 mm"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "NON STANDARD-2 TDK"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SPM4012T-2R2M/TDK/view-part/?ref=eda"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "N/A"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SPM4012T-2R2M/TDK/view-part/?ref=snap"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SPM4012T-2R2M"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1500203&manufacturer=TDK&part_name=SPM4012T-2R2M&search_term=2.2µh"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Surface Mount Power Inductor, SPM Series, 2.2 H, 20%, Shielded, 0.095 ohm, 2.9 A"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "TDK"
-			(at 86.36 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cec623fd-0260-4602-a2a7-e2a1242a79fc")
-		)
-		(pin "1"
-			(uuid "c0f72e1a-fc49-4eef-bf22-7d71e9aa5f67")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 83.82 134.62 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aa4e9e82-397e-480b-867d-04987b50ea19")
-		(property "Reference" "R23"
-			(at 83.82 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "44.2k"
-			(at 83.566 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 83.82 136.398 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 83.82 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0ed47cdf-2141-4afe-a5dd-eb59388b9210")
-		)
-		(pin "2"
-			(uuid "235581db-7cb5-44d6-a684-fb8b26e7d6c9")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 39.37 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa9a82a2-8079-450d-9b8c-973b012f49fc")
-		(property "Reference" "C51"
-			(at 39.37 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "50nF"
-			(at 39.37 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 43.18 132.3848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 39.37 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "67870453-8b7a-4681-bf20-6276b0a710b2")
-		)
-		(pin "2"
-			(uuid "1d41942b-a655-4c81-a6f6-374bd14a7318")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "C51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 77.47 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b6c55c30-319f-476b-9e42-466297af6749")
-		(property "Reference" "C42"
-			(at 77.47 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 77.47 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 132.3848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 77.47 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b902bced-0b14-40da-a4da-2f4d578baf69")
-		)
-		(pin "2"
-			(uuid "0bc0c698-e0e3-46b7-be88-681817492d51")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "C42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 124.46 135.89 0)
 		(unit 1)
@@ -3614,52 +2323,43 @@
 		)
 	)
 	(symbol
-		(lib_id "SY8205FCC:SY8205FCC")
-		(at 58.42 130.81 0)
+		(lib_id "Regulator_Switching:TPS54302")
+		(at 55.88 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c7d1897f-f0c4-42a3-9b5d-dbcdc3c32a2a")
-		(property "Reference" "U7"
-			(at 58.42 113.03 0)
+		(uuid "cea9d839-4ad1-4456-ba17-8f0fb4291e93")
+		(property "Reference" "U15"
+			(at 55.88 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SY8205FCC"
-			(at 58.42 115.57 0)
+		(property "Value" "TPS54302"
+			(at 55.88 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "SY8205FCC:VREG_SY8205FCC"
-			(at 58.42 130.81 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 57.15 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 130.81 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54302.pdf"
+			(at 48.26 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3667,157 +2367,55 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "Silergy"
-			(at 58.42 130.81 0)
+		(property "Description" "3A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
+			(at 55.88 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.60 mm"
-			(at 58.42 130.81 0)
+		(property "KLC_S4.2_DVDD" ""
+			(at 55.88 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Package" "Package"
-			(at 58.42 130.81 0)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 55.88 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
-		)
-		(property "Price" "None"
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SY8205FCC/Silergy/view-part/?ref=eda"
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "0.4"
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SY8205FCC/Silergy/view-part/?ref=snap"
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "SY8205FCC"
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "High-Efficiency Fast Response，5A, 30V Input Synchronous Step Down Regulator"
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Silergy"
-			(at 58.42 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "9"
-			(uuid "2b82b4a8-86df-4b79-9d12-5b36f7955b10")
-		)
-		(pin "1"
-			(uuid "2a17d060-5fba-4b52-b0cc-7a325991073d")
-		)
-		(pin "3"
-			(uuid "7e83db5a-c9a6-4130-b104-b4b80dd44cef")
-		)
-		(pin "7"
-			(uuid "e1dc8024-aa3b-4a3e-91e9-28b9de0ae4ce")
-		)
-		(pin "8"
-			(uuid "c326fb09-4695-443e-b9ea-31e2a00dac01")
-		)
-		(pin "5"
-			(uuid "2fe38410-77b4-47b3-b9bd-8481d67399b3")
-		)
-		(pin "2"
-			(uuid "86833ae2-6cc6-4ca9-8514-18e891a84ed2")
-		)
-		(pin "4"
-			(uuid "f6a4ba80-e937-4c3b-ac3c-6a8956267212")
 		)
 		(pin "6"
-			(uuid "6d8f0382-6d00-4c26-a7e8-13eb907e30e4")
+			(uuid "a07878aa-a052-4003-881b-996bc026bc53")
+		)
+		(pin "5"
+			(uuid "e4f0d127-678d-4ebb-801b-c4e4d63e1916")
+		)
+		(pin "4"
+			(uuid "3dca0272-8614-4f79-a3c4-9cc1054d8116")
+		)
+		(pin "3"
+			(uuid "d1a1639b-0813-4faf-b2dc-c0058e2221d4")
+		)
+		(pin "2"
+			(uuid "2213c38e-542e-487a-8c0b-679206939242")
+		)
+		(pin "1"
+			(uuid "8ea3e5cf-d2dd-423d-bffc-c46f21689f55")
 		)
 		(instances
 			(project ""
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "U7")
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -3885,73 +2483,6 @@
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
 					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 99.06 128.27 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "de76a3d7-9e48-4f5c-84ab-f33ceced8b70")
-		(property "Reference" "#PWR038"
-			(at 95.25 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 102.87 128.2699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 99.06 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9ee846b4-d680-41fd-9ed4-1759d90cd742")
-		)
-		(instances
-			(project "Blitz"
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -4077,6 +2608,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 120.65 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 120.65 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "992e8be8-ecb8-47e4-a569-b0946b3fd4df")
 		)
@@ -4087,73 +2636,6 @@
 			(project "Blitz"
 				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
 					(reference "C43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 73.66 140.97 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6c40e44-9ca5-49c3-85d7-0a2d6cc5b0fa")
-		(property "Reference" "#PWR035"
-			(at 80.01 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 77.47 140.9699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "76afed36-85cc-4e62-a1c0-afd4d732a196")
-		)
-		(instances
-			(project ""
-				(path "/e8b263af-d576-40b7-a774-1c6d96794e54/916eb9f7-e1e7-4e3b-a6b6-6a58ceab14a6"
-					(reference "#PWR035")
 					(unit 1)
 				)
 			)
